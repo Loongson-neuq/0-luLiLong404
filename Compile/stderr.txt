@@ -1,0 +1,21 @@
+main.cpp:11:8: error: redefinition of ‘struct Result’
+   11 | struct Result
+      |        ^~~~~~
+In file included from main.cpp:1:
+.assignment/test.h:4:8: note: previous definition of ‘struct Result’
+    4 | struct Result
+      |        ^~~~~~
+main.cpp:18:6: error: redefinition of ‘bool check(const Result&, int, int, int)’
+   18 | bool check(const Result &result, int a, int b, int c)
+      |      ^~~~~
+In file included from main.cpp:1:
+.assignment/test.h:11:6: note: ‘bool check(const Result&, int, int, int)’ previously defined here
+   11 | bool check(const Result &result, int a, int b, int c)
+      |      ^~~~~
+main.cpp:62:5: error: redefinition of ‘int main(int, char**)’
+   62 | int main(int argc, char *argv[])
+      |     ^~~~
+In file included from main.cpp:1:
+.assignment/test.h:55:5: note: ‘int main(int, char**)’ previously defined here
+   55 | int main(int argc, char *argv[])
+      |     ^~~~
